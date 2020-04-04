@@ -13,7 +13,6 @@ Teacher: [Will Sentance](https://twitter.com/willsentance)
 * [Subclassing with Factory Functions](src/05-subclassing-factory-functions.md)
 * [Subclassing with new and call](src/06-new-and-call.md)
 * [Subclassing with class, extends & super](src/07-subclassing-extends.md)
-* [Conclusion](src/08-conclusion.md)
 
 ### 5 very important things with regards to being an engineer
 
