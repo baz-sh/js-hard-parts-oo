@@ -92,3 +92,19 @@ The class keyword.
 ### Problems
 
 * 99% of developers have no idea how it works
+
+JavaScript uses this _proto_ link to give objects, functions and arrays a bunch of bonus functionality. All objects by defaul have `__proto__`.
+
+```js
+const obj = {
+    num: 3
+}
+
+obj.num //3
+obj.hasOwnProperty("num") // ? Where's this method?
+
+Object.prototype // {hasOwnProperty: FUNCTION}
+```
+
+* With `Object.create` we override the default `__proto__` reference to `Object.prototype` and replace with `functionStore`
+* But functionStore is an object so _it_ has a `__proto__` reference to `Object.prototype`—we just intercede in the chain.
