@@ -60,9 +60,7 @@ paidUser1.sayName(); // I'm Alyssa
 
 The "magic" in the above code comes from `Object.setPrototypeOf`. The first argument is the object you want to set the `__proto__` reference of, and the second argument is what you want it to be. `Object.setPrototypeOf(newPaidUser, paidUserFunctions);` says "Set the `__proto__` link of newPaidUser to be paidUserFunctions".
 
-## Subclass Review
-
-### Interlude
+## Call and Apply
 
 We have another way of running a function that allow us to control the assignment of this.
 
@@ -81,6 +79,3 @@ obj.inrement.call(otherObj) // otherObj.num now 11
 ```
 
 `this` always refers to the object to the left of the dot on which the function is being called—unless we override that by running the function using `.call()` or `.apply()` which lets us set the value of `this` inside of the `increment` function.
-
-## Call and Apply
-
