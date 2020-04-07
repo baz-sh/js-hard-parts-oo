@@ -59,6 +59,4 @@ This method would ovveride the prototype object and put a new one in there (usin
 
 ## Using a call Method in a Constructor
 
-## Assigning Properties to Instance
-
-## Prototype tracing
+Using `.call` allows you to control the context of `this`. Within `paidUserCreator`  by using `.call` on `userCreator` and passing `this` into it, the context on which `userCreator` runs is that of `paidUserCreator`.
